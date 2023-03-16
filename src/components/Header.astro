@@ -2,35 +2,42 @@
 ---
 
 <header>
-  <div class="logo">
-    <a href="src/pages/index.astro">
-      <img class="logo_img" src="public/logo-outline.png" alt="kune logo" />
-    </a>
+  <div class="menulogo">
+    <div class="logo">
+      <a href="src/pages/index.astro">
+        <img class="logo_img" src="public/logo-outline.png" alt="kune logo" />
+      </a>
+    </div>
+    <div class"navmenu">
+      <nav class "main-menu">
+        <div class="divul">
+          <ul class"menu">
+            <li>
+              <a href="src/pages/shop.astro">Shop</a>
+            </li>
+            <li>
+              <a href="src/pages/volunteer.astro">Volunteer</a>
+            </li>
+            <li>
+              <a href="src/pages/lineup.astro">Lineup</a>
+            </li>
+            <li>
+              <a href="src/pages/index.astro">Hjem</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
   </div>
-  <nav class "main-menu">
-    <ul class"menu">
-      <li>
-        <a href="src/pages/shop.astro">Shop</a>
-      </li>
-      <li>
-        <a href="src/pages/volunteer.astro">Volunteer</a>
-      </li>
-      <li>
-        <a href="src/pages/lineup.astro">Lineup</a>
-      </li>
-      <li>
-        <a href="src/pages/index.astro">Hjem</a>
-      </li>
-    </ul>
-  </nav>
 </header>
 
 <style>
   header {
-    align-items: center;
+    align-items: right;
     font-family: "Montserrat", sans-serif;
     padding-right: 2rem;
   }
+
   li {
     float: right;
     list-style: none;
@@ -49,5 +56,10 @@
 
   .logo_img {
     width: 3%;
+  }
+
+  .menulogo {
+    display: grid;
+    grid-column: 2;
   }
 </style>
