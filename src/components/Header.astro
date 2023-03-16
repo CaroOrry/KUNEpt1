@@ -10,19 +10,16 @@
   <nav class "main-menu">
     <ul class"menu">
       <li>
-        <a href="#">ABOUT</a>
+        <a href="src/pages/shop.astro">Shop</a>
       </li>
       <li>
-        <a href="src/pages/shop.astro">SHOP</a>
+        <a href="src/pages/volunteer.astro">Volunteer</a>
       </li>
       <li>
-        <a href="src/pages/volunteer.astro">VOLUNTEER</a>
+        <a href="src/pages/lineup.astro">Lineup</a>
       </li>
       <li>
-        <a href="src/pages/lineup.astro">LINEUP</a>
-      </li>
-      <li>
-        <a href="src/pages/index.astro">HOME</a>
+        <a href="src/pages/index.astro">Hjem</a>
       </li>
     </ul>
   </nav>
@@ -30,10 +27,11 @@
 
 <style>
   header {
-    align-items: center;
+    align-items: right;
     font-family: "Montserrat", sans-serif;
     padding-right: 2rem;
   }
+
   li {
     float: right;
     list-style: none;
@@ -52,5 +50,10 @@
 
   .logo_img {
     width: 3%;
+  }
+
+  .menulogo {
+    display: grid;
+    grid-column: 2;
   }
 </style>
