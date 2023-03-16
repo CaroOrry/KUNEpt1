@@ -1,8 +1,8 @@
 ---
 import Button from "../components/Button.astro";
-import Header from "../components/Header.astro";
 import Foooter from "../components/Foooter.astro";
 import Header from "../components/Header.astro";
+import CountDown from "../components/CountDown.astro";
 ---
 
 <html lang="en">
@@ -11,6 +11,7 @@ import Header from "../components/Header.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="styles/index.css" />
     <title>Astro</title>
   </head>
   <body>
@@ -20,7 +21,9 @@ import Header from "../components/Header.astro";
     <a href="src/pages/volunteer.astro">Volunteer</a>
     <a href="src/pages/lineup.astro">Lineup</a>
     <a href="src/pages/shop.astro">Shop</a>
-    <Foooter />
+    <img src="public/forside.webp" alt="forside" />
     <Button />
+    <CountDown />
+    <Foooter />
   </body>
 </html>
