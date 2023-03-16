@@ -12,16 +12,17 @@ img {
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
   font-size: 70px;
+  font-family: "montserrat";
 }
 
 .forsideknap {
   position: absolute;
-  top: 60%;
+  top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
