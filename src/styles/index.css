@@ -26,3 +26,11 @@ img {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+
+.forsidegrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 30px;
+  margin: 60px;
+  width: 80%;
+}
