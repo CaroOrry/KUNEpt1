@@ -36,3 +36,17 @@ img {
   width: 80%;
   place-content: center;
 }
+
+.tekstgrid {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  position: absolute;
+  color: white;
+  margin-top: 150px;
+  margin-left: 110px;
+  font-size: 35px;
+}
+
+.shadow {
+  box-shadow: 3px 3px blue;
+}
