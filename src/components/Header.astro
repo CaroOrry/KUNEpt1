@@ -3,36 +3,39 @@
 
 <header>
   <div class="logo">
-    <a href="src/pages/index.astro">
+    <a href="/">
       <img class="logo_img" src="public/logo-outline.png" alt="kune logo" />
     </a>
     <div class="dato">
-      <p>19/7 to 23/7</p>
+      <p>19/7 - 23/7</p>
     </div>
   </div>
   <nav class "main-menu">
     <ul class"menu">
       <li>
-        <a href="../src/pages/about.astro">ABOUT</a>
+        <a href="about">ABOUT</a>
       </li>
       <li>
-        <a href="../src/pages/shop.astro">SHOP</a>
+        <a href="shop">SHOP</a>
       </li>
       <li>
-        <a href="../src/pages/volunteer.astro">VOLUNTEER</a>
+        <a href="volunteer">VOLUNTEER</a>
       </li>
       <li>
-        <a href="../src/pages/lineup.astro">LINEUP</a>
+        <a href="lineup">LINEUP</a>
       </li>
     </ul>
   </nav>
 </header>
+
 
 <style>
   header {
     align-items: right;
     font-family: "Montserrat", sans-serif;
     padding-right: 2rem;
+    display: flex;
+    justify-content: space-between;
   }
 
   li {
@@ -52,18 +55,16 @@
     font-weight: bold;
   }
 
-  p {
-    color: #002cfd;
+  p{
+    color: #002CFD;
     text-decoration: none;
     font-size: 15px;
     font-weight: bold;
   }
 
-  .dato {
-    position: absolute;
-    left: 180%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+  .dato{
+  width: 100%;
+  margin-left: 20px;
   }
 
   .logo_img {
@@ -75,9 +76,9 @@
     grid-column: 2;
   }
 
-  .logo {
-    position: absolute;
-    left: 20px;
-    transform: translate(1%, 0.5%);
+  .logo{
+    display: flex;
+    align-items: center;  
+    margin-left: 20px;
   }
 </style>

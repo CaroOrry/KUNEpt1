@@ -1,10 +1,31 @@
 ---
 ---
 
-<p id="countdown"></p>
+<p id="countdown">
+  <section class="container">
+  <div class="countdown_container">
+    <p id="days"></p>
+    <p class="text">DAYS</p>
+  </div>
+  <div class="countdown_container">
+    <p id="hours"></p>
+    <p class="text">HOUR</p>
+  </div>
+  <div class="countdown_container">
+    <p id="minutes"></p>
+    <p class="text">MINUTES</p>
+  </div>
+  <div class="countdown_container">
+    <p id="seconds"></p>
+    <p class="text">SECONDS</p>
+  </div>
+</section>
+</p>
 
 <style>
-  p {
+  .container {
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-size: 50px;
     color: #39ff16;
@@ -13,8 +34,14 @@
     padding-bottom: 150px;
     font-family: "Montserrat", sans-serif;
   }
-
-  
+.countdown_container {
+  display: flex;
+  margin-left: 15px;
+}
+.text{
+font-size: 16px;
+font-weight: 300;
+}
 </style>
 
 <script>
@@ -36,7 +63,12 @@
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
     // Resultat i element med id "countdown"
-    document.getElementById("countdown").innerHTML = days + "D " + hours + "H " + minutes + "M " + seconds + "S ";
+    document.getElementById("days").innerHTML = days + " ";
+    document.getElementById("hours").innerHTML = hours + " ";
+    document.getElementById("minutes").innerHTML = minutes + " ";
+    document.getElementById("seconds").innerHTML = seconds + " ";
+
+    //document.querySelector("#days").textContent = days;
 
     // hvis nedtælling går i 0
     if (distance < 0) {
