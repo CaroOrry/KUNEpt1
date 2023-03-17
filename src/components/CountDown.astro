@@ -16,27 +16,27 @@
 </style>
 
 <script>
-  // Set the date we're counting down to
+  // Sæt datoen der tælles ned til
   const countDownDate = new Date("Jul 19, 2023 10:00:00").getTime();
 
-  // Update the count down every 1 second
+  // Opdater hver sekund
   const x = setInterval(function () {
     // Get today's date and time
     const now = new Date().getTime();
 
-    // Find the distance between now and the count down date
+    // Find differencen mellem datoen og nu
     const distance = countDownDate - now;
 
-    // Time calculations for days, hours, minutes and seconds
+    // Tæller for dage, timer, minutter og sekunder
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Output the result in an element with id="demo"
+    // Resultat i element med id "demo"
     document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 
-    // If the count down is over, write some text
+    // hvis nedtælling går i 0
     if (distance < 0) {
       clearInterval(x);
       document.getElementById("demo").innerHTML = "EXPIRED";
