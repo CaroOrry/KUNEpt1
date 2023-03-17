@@ -3,23 +3,23 @@
 
 <p id="countdown">
   <section class="container">
-  <div class="countdown_container">
-    <p id="days"></p>
-    <p class="text">DAYS</p>
-  </div>
-  <div class="countdown_container">
-    <p id="hours"></p>
-    <p class="text">HOUR</p>
-  </div>
-  <div class="countdown_container">
-    <p id="minutes"></p>
-    <p class="text">MINUTES</p>
-  </div>
-  <div class="countdown_container">
-    <p id="seconds"></p>
-    <p class="text">SECONDS</p>
-  </div>
-</section>
+    <div class="countdown_container">
+      <p id="days"></p>
+      <p class="text">DAYS</p>
+    </div>
+    <div class="countdown_container">
+      <p id="hours"></p>
+      <p class="text">HOURS</p>
+    </div>
+    <div class="countdown_container">
+      <p id="minutes"></p>
+      <p class="text">MINUTES</p>
+    </div>
+    <div class="countdown_container">
+      <p id="seconds"></p>
+      <p class="text">SECONDS</p>
+    </div>
+  </section>
 </p>
 
 <style>
@@ -45,32 +45,23 @@ font-weight: 100;
 </style>
 
 <script>
-  // Sæt datoen der tælles ned til
   const countDownDate = new Date("Jul 19, 2023 10:00:00").getTime();
 
-  // Opdater hver sekund
   const x = setInterval(function () {
-    // Get today's date and time
     const now = new Date().getTime();
 
-    // Find differencen mellem datoen og nu
     const distance = countDownDate - now;
 
-    // Tæller for dage, timer, minutter og sekunder
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-    // Resultat i element med id "countdown"
     document.getElementById("days").innerHTML = days + " ";
     document.getElementById("hours").innerHTML = hours + " ";
     document.getElementById("minutes").innerHTML = minutes + " ";
     document.getElementById("seconds").innerHTML = seconds + " ";
 
-    //document.querySelector("#days").textContent = days;
-
-    // hvis nedtælling går i 0
     if (distance < 0) {
       clearInterval(x);
       document.getElementById("countdown").innerHTML = "0";
