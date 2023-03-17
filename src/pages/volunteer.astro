@@ -10,12 +10,59 @@ import Header from "../components/Header.astro";
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="src/styles/volunteer.css" />
     <title>Astro</title>
   </head>
   <body>
     <Header />
-    <img src="" alt="" />
-    <h1>Volunteer</h1>
+    <main>
+      <h1 class="volunteers">VOLUNTEER</h1>
+      <img src="volunteer.webp" alt="billede" />
+
+      <div class="grid2">
+        <div class="howwework">
+          <h1 class="hww">HOW WE WORK</h1>
+          <p>
+            At KUNE, we strive to create an environment where volunteers feel empowered and their contribution is recognized and appreciated. We offer opportunities for personal and professional development, such as training and workshops, and a
+            chance to meet new people, work with artists, and uniquely experience the festival. Volunteering with KUNE Festival is a way to give back to the community while co-creating and shaping the festival experience with us. ‍Our volunteers are
+            a diverse group of individuals who come from different backgrounds, cultures, and age groups. Yet, they share a common passion for music, art, and creating a meaningful experience for others. Everyone has something valuable to bring to
+            the table, and we are committed to ensuring that all our volunteers feel welcome, respected, and valued. The community of volunteers is supportive, and we are always excited to see how everyone comes together to bring the festival to
+            life.
+          </p>
+        </div>
+
+        <div class="form">
+          <h1 class="overskriftform">Become a volunteer at KUNE</h1>
+          <div>
+            <form action="/action_page.php">
+              <input type="text" id="fname" name="firstname" placeholder="Name.." />
+
+              <input type="text" id="lname" name="lastname" placeholder="Email.." />
+
+              <input type="text" id="message" name="lastname" placeholder="Message.." />
+
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="heart">VOLUNTEERS ARE THE HEART OF KUNE</h1>
+
+      <div class="atekst">
+        <h1 class="advantages">ADVANTAGES</h1>
+        <p>
+          Joining the KUNE Festival volunteer team is an incredible opportunity to be part of a unique and creative community that builds something together. As a volunteer, you will receive a free ticket to the festival, food and drink tickets for
+          your shifts, and the chance to attend dedicated volunteer events before and after the festival. Before the festival, we'll host a free volunteer weekend on the island where you can participate in workshops, explore the island's beauty, and
+          connect with other volunteers and the organisers behind the festival. After the festival, we have a decompression event where we gather to share memories and give feedback.‍ By volunteering with KUNE Festival, you will have a chance to
+          develop new skills, gain valuable work experience, and network with professionals in the music and arts industry. You'll have a unique opportunity to work with artists, explore different styles of music and art, and shape the festival
+          experience for guests. But more than that, you'll be part of a community of diverse, passionate, and like-minded individuals who are committed to creating something meaningful and exciting. So come join us and be part of an unforgettable
+          experience!
+        </p>
+      </div>
+
+      <a href="#"><button class="button">Get Tickets</button></a>
+    </main>
     <Foooter />
   </body>
 </html>

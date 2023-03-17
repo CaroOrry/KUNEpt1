@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.volunteers {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 70px;
+  font-family: "montserrat";
+}
+
+/* HOW WE WORK OG FORM */
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 100px;
+  background-color: white;
+}
+
+.hww {
+  margin-bottom: 30px;
+  background-color: white;
+}
+
+.howwework {
+  padding-top: 4rem;
+  line-height: 25px;
+  font-family: "montserrat";
+  margin-inline: 3rem;
+  background-color: white;
+}
+
+.overskriftform {
+  color: #1014eb;
+  font-family: "montserrat";
+}
+
+input[type="text"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 2px solid #1014eb;
+  border-radius: 9px;
+  box-sizing: border-box;
+}
+
+input[type="submit"] {
+  width: 20%;
+  background-color: #ffffff;
+  color: #1014eb;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 2px solid blue;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #2006e8;
+  color: white;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+#message {
+  padding: 3rem;
+}
+
+.form {
+  margin-inline: 11rem;
+  background-color: white;
+}
+
+.collage {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.heart {
+  color: black;
+  text-align: center;
+  margin-top: 100px;
+  font-family: "montserrat";
+  background-image: url(billedecollage.jpg);
+  padding: 200px;
+  color: white;
+  font-size: 70px;
+}
+
+.advantages {
+  margin-bottom: 30px;
+}
+.atekst {
+  margin-block: 100px;
+  margin-inline: 70px;
+  background-color: white;
+  line-height: 25px;
+  font-family: "montserrat";
+}
+
+.button {
+  border: 2px solid blue;
+  border-radius: 1rem;
+  padding: 1rem;
+  padding-inline: 1.5rem;
+  background-color: white;
+  text-align: center;
+  color: blue;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 3px 3px 5px white;
+  cursor: pointer;
+  font-family: "montserrat";
+  margin-left: 1000px;
+  margin-bottom: 100px;
+}
+
+.button:hover {
+  background-color: blue;
+  color: white;
+}
