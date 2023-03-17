@@ -13,12 +13,13 @@ img {
 h3 {
   font-family: "montserrat";
   font-size: 25px;
-  margin-block: 20px;
+  margin-top: 20px;
 }
 
 p {
   font-family: "montserrat";
   font-size: 15px;
+  margin-block: 20px;
 }
 
 .colon1 {
@@ -37,4 +38,15 @@ p {
   color: white;
   font-size: 70px;
   font-family: "montserrat";
+}
+
+.billetknap {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.video {
+  width: 50%;
+  margin: 0 auto;
 }

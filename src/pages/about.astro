@@ -7,11 +7,11 @@ import Header from "../components/Header.astro";
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
         <link rel="stylesheet" href="src/styles/about.css" />
-    <title>Astro</title>
+    <title>About</title>
   </head>
   <body>
     <Header />
@@ -25,14 +25,18 @@ import Header from "../components/Header.astro";
         </p>
         <p>On the more practical side of things, KUNE Festival is an NGO made up of over 30 passionate and dedicated individuals who work voluntarily year-round to create this extraordinary experience. Our team is comprised of artists, musicians, designers, writers, project managers, and cultural enthusiasts, all united by our shared vision and values. We are motivated by the belief that art and culture have the power to create positive change in the world, and we are committed to working towards this goal by creating a unique platform that celebrates the Nordic underground talent. Our team is inspired by the creative community that we are building, and we are continually amazed by the skills and dedication of our members.</p>
     </div>
-    <p>YOUTUBE VIDEO HER :D</p>
+    <div class="video">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/OJyL2mzsiLw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </div>
     <div class="colon2">
         <h3>The location</h3>
         <p>The island is a decommissioned defense fort built in the 19th century. A unique landmark with historical value, the fort-island was recently renovated and repurposed into a place dedicated to young people and innovative cultural initiatives. It can host 2500 people, 1000 of which could be accommodated in the camping area.</p>
         <p>Traveling to KUNE Festival by boat for a 30-minute journey to an island location adds a unique and significant element to the festival experience. Reaching the festival site by boat separates us from our everyday lives and creates a sense of escape to a new world. The festival island becomes a self-contained microcosm where everyone is living, breathing, and experiencing the festival together. This close-knit community setting creates a petri dish for social interactions, where we can connect and bond in a way that is impossible in our everyday lives.</p>
         <p>This unique location provides a striking contrast between its historical purpose of aggression and its current function as a hub for a cultural celebration. The island’s transformation into a place dedicated to youth and innovative cultural initiatives highlights the shift from conflict to community and symbolizes hope and possibility. By hosting the festival on this historic site, we aim to offer a powerful reminder of the positive impact art and culture can have on society and their role in bringing people together and fostering understanding and connection.</p>
     </div>
+    <div class="billetknap">
     <Button />
+    </div>
     <Foooter />
   </body>
 </html>
