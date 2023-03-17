@@ -27,12 +27,31 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.forsidegrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 30px;
-  margin: auto;
-  margin-block: 60px;
-  width: 80%;
-  place-content: center;
+@media (min-width: 700px) {
+  .forsidegrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    margin: auto;
+    margin-block: 60px;
+    width: 80%;
+    place-content: center;
+  }
+}
+
+.tekstgrid {
+  font-family: "Montserrat";
+  font-weight: bolder;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.shadow {
+  box-shadow: 3px 3px blue;
+  position: relative;
+  text-align: center;
+  color: white;
 }
