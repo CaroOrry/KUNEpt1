@@ -38,3 +38,9 @@ p {
   font-size: 70px;
   font-family: "montserrat";
 }
+
+.billetknap {
+  margin: auto;
+  text-align: center;
+  margin-bottom: 50px;
+}
