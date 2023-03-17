@@ -42,11 +42,14 @@ img {
   font-weight: bolder;
   position: absolute;
   color: white;
-  margin-top: 150px;
-  margin-left: 110px;
   font-size: 35px;
+  margin: auto;
+  text-align: center;
+  margin-top: 140px;
+  width: 18%;
 }
 
 .shadow {
   box-shadow: 3px 3px blue;
+  text-align: center;
 }
