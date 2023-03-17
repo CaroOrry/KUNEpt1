@@ -12,7 +12,7 @@ img {
 
 .volunteers {
   position: absolute;
-  top: 35%;
+  top: 60%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
@@ -27,6 +27,7 @@ img {
   grid-template-columns: 1fr 1fr;
   margin-top: 100px;
   background-color: white;
+  margin-bottom: 50px;
 }
 
 .hww {
@@ -40,6 +41,7 @@ img {
   font-family: "montserrat";
   margin-inline: 3rem;
   background-color: white;
+  margin-left: 100px;
 }
 
 .overskriftform {
@@ -76,7 +78,6 @@ input[type="submit"]:hover {
 
 div {
   border-radius: 5px;
-  background-color: #f2f2f2;
   padding: 20px;
 }
 
@@ -85,8 +86,9 @@ div {
 }
 
 .form {
-  margin-inline: 11rem;
+  margin-inline: 50px;
   background-color: white;
+  margin-right: 100px;
 }
 
 .collage {
@@ -124,24 +126,10 @@ div {
   font-family: "montserrat";
 }
 
-.button {
-  border: 2px solid blue;
-  border-radius: 1rem;
-  padding: 1rem;
-  padding-inline: 1.5rem;
-  background-color: white;
+.knap {
+  margin: auto;
   text-align: center;
-  color: blue;
-  text-transform: uppercase;
-  font-weight: bold;
-  box-shadow: 3px 3px 5px white;
-  cursor: pointer;
-  font-family: "montserrat";
-  margin-left: 1000px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
 }
 
-.button:hover {
-  background-color: blue;
-  color: white;
-}
+button: hover;
