@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+h3 {
+  font-family: "montserrat";
+  font-size: 25px;
+  margin-block: 20px;
+}
+
+p {
+  font-family: "montserrat";
+  font-size: 15px;
+}
+
+.colon1 {
+  margin: 100px;
+}
+
+.colon2 {
+  margin: 100px;
+}
+
+.overskrift {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 70px;
+  font-family: "montserrat";
+}
