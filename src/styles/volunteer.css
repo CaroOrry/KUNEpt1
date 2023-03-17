@@ -36,24 +36,30 @@ img {
 }
 
 .howwework {
-  padding-top: 4rem;
   line-height: 25px;
   font-family: "montserrat";
-  margin-inline: 3rem;
   background-color: white;
   margin-left: 100px;
+}
+
+.form {
+  margin-inline: 50px;
+  background-color: white;
+  margin-right: 100px;
+  margin-right: 100px;
 }
 
 .overskriftform {
   color: #1014eb;
   font-family: "montserrat";
+  margin-left: 20px;
 }
 
 input[type="text"],
 select {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 10px 0;
   display: inline-block;
   border: 2px solid #1014eb;
   border-radius: 9px;
@@ -61,11 +67,9 @@ select {
 }
 
 input[type="submit"] {
-  width: 20%;
   background-color: #ffffff;
   color: #1014eb;
   padding: 14px 20px;
-  margin: 8px 0;
   border: 2px solid blue;
   border-radius: 9px;
   cursor: pointer;
@@ -85,12 +89,6 @@ div {
   padding: 3rem;
 }
 
-.form {
-  margin-inline: 50px;
-  background-color: white;
-  margin-right: 100px;
-}
-
 .collage {
   position: absolute;
   top: 100%;
@@ -100,27 +98,24 @@ div {
 }
 
 .heart {
-  color: black;
   text-align: center;
-  margin-top: 100px;
   font-family: "montserrat";
   color: white;
   font-size: 50px;
   position: absolute;
-  top: 160%;
+  top: 220%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  font-size: 70px;
-  font-family: "montserrat";
 }
 
 .advantages {
   margin-bottom: 30px;
+  font-size: 25px;
 }
+
 .atekst {
   margin-block: 100px;
-  margin-inline: 70px;
+  margin-inline: 100px;
   background-color: white;
   line-height: 25px;
   font-family: "montserrat";
@@ -131,5 +126,3 @@ div {
   text-align: center;
   margin-bottom: 50px;
 }
-
-button: hover;
