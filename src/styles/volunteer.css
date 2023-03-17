@@ -80,11 +80,6 @@ input[type="submit"]:hover {
   color: white;
 }
 
-div {
-  border-radius: 5px;
-  padding: 20px;
-}
-
 #message {
   padding: 3rem;
 }
