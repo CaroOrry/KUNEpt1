@@ -52,7 +52,7 @@ img {
 .overskriftform {
   color: #1014eb;
   font-family: "montserrat";
-  margin-left: 20px;
+  margin: auto;
 }
 
 input[type="text"],
@@ -98,7 +98,7 @@ input[type="submit"]:hover {
   color: white;
   font-size: 50px;
   position: absolute;
-  top: 220%;
+  top: 200%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
