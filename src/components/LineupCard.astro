@@ -1,19 +1,56 @@
 ---
 
 ---
-
+<article>
 <img class="artist" src="/forsidebillede1.webp" alt="Kunstner">
+<div>
 <h2>July</h2>
 <p class="date">19</p>
-<p class="day">Monday</p>
-<p class="time">23:00 - 00:00</p>
+<p class="day">Monday <span>23:00 - 00:00</span></p>
 
+</div>
+</article>
 <style>
+    article {
+        display: grid;
+        
+    }
+    article>* {
+        grid-column: 1;
+        grid-row: 1;
+    }
+    div {
+        display:grid;
+        grid-template-rows: 2rem;
+        grid-template-columns: auto 1fr;
+        align-items: start;
+    }
+    span {
+        display: block;
+    }
+    h2 {
+        grid-column: 1/-1;
+    }
     img {
         width: 20%;
     }
 
     p, h2 {
         color: #39ff16;
+        font-family: "montserrat";
+    }
+
+    .date {
+        font-weight: 600;
+        font-size: 40px;
+        margin-top: 15px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .day {
+        margin-top: 20px;
     }
 </style>
