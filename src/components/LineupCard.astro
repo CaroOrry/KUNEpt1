@@ -1,59 +1,76 @@
 ---
-
+const { image, date, day, timeofday } = Astro.props;
+console.log(image, date, day, timeofday);
 ---
-<article>
-    <img class="artist" src="/forsidebillede1.webp" alt="Kunstner">
-    <div>
-        <h2>July</h2>
-        <p class="date">19</p>
-        <p class="day">Monday <span>23:00 - 00:00</span></p>
+
+<article class="lineupcard">
+  <img src={image} alt="" />
+
+  <div>
+    <h2>July</h2>
+    <div class="grid">
+      <p class="date">{date}</p>
+      <p class="day">{day} <span>{timeofday}</span></p>
     </div>
+  </div>
 </article>
 
 <style>
-    article {
-        display: grid;
-        
-    }
-    article>* {
-        grid-column: 1;
-        grid-row: 1;
-    }
-    div {
-        display:grid;
-        grid-template-rows: 2rem;
-        grid-template-columns: auto 1fr;
-        align-items: start;
-        margin-top: 180px;
-        margin-left: 10px;
-    }
-    span {
-        display: block;
-    }
-    h2 {
-        grid-column: 1/-1;
-    }
-    img {
-        width: 20%;
-    }
+  article {
+    display: grid;
+  }
+  article img {
+    width: 100%;
+  }
+  article > * {
+    grid-column: 1;
+    grid-row: 1;
+  }
 
-    p, h2 {
-        color: #39ff16;
-        font-family: "montserrat";
-    }
+  .lineupcard {
+    margin: 2rem;
+  }
+  div {
+    display: grid;
+    width: 100%;
+    grid-template-rows: 2rem;
+    grid-template-columns: auto 1fr;
+    align-items: start;
+  }
+  .grid {
+    display: flex;
+  }
+  div img {
+    width: 100%;
+  }
+  span {
+    display: block;
+  }
+  h2 {
+    grid-column: 1/-1;
+  }
+  img {
+    width: 20%;
+  }
 
-    .date {
-        font-weight: 600;
-        font-size: 40px;
-        margin-top: 15px;
-    }
+  p,
+  h2 {
+    color: #39ff16;
+    font-family: "montserrat";
+  }
 
-    h2 {
-        font-size: 35px;
-    }
+  .date {
+    font-weight: 600;
+    font-size: 40px;
+    margin-top: 15px;
+  }
 
-    .day {
-        margin-top: 20px;
-        margin-left: 10px;
-    }
+  h2 {
+    font-size: 35px;
+  }
+
+  .day {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
 </style>

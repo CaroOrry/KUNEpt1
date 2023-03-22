@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-img {
+.lineupbaggrund {
   width: 100%;
   height: auto;
   display: block;
@@ -17,4 +17,18 @@ img {
   color: white;
   font-size: 70px;
   font-family: "montserrat";
+}
+
+.plakat {
+  margin-left: 20rem;
+  margin-top: 10rem;
+  color: BLACK;
+  font-size: 70px;
+  font-family: "montserrat";
+}
+
+.plakatbillede {
+  width: 60%;
+  margin-left: 17rem;
+  margin-top: 5rem;
 }

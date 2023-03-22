@@ -1,4 +1,13 @@
 ---
+const url = "https://xepgsmbtwnfnxmjmdcow.supabase.co/rest/v1/kunefestivalkunstner";
+const options = {
+  headers: {
+    apikey: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InhlcGdzbWJ0d25mbnhtam1kY293Iiwicm9sZSI6ImFub24iLCJpYXQiOjE2NzkwNTI5MDUsImV4cCI6MTk5NDYyODkwNX0.eJmg-jwTzoz_OkRLpxL-FHJQmBKFiZU5GRyD8cEDLYA",
+  },
+};
+const response = await fetch(url, options);
+const data = await response.json();
+
 import Button from "../components/Button.astro";
 import Buttonlineup from "../components/Buttonlineup.astro";
 import Foooter from "../components/Foooter.astro";
@@ -17,11 +26,21 @@ import LineupCard from "../components/LineupCard.astro";
   </head>
   <body>
     <Header />
-    <img src="lineupbaggrund.png" alt="baggrundsbillede" />
+    <img class="lineupbaggrund" src="lineupbaggrund.png" alt="baggrundsbillede" />
     <h1 class="centered1">LINEUP</h1>
     <Buttonlineup />
-    <LineupCard />
-    <LineupCard />
+    <main>
+      {data.map((lineup) => <LineupCard image={`/${lineup.image}`} date={lineup.date} day={lineup.day} timeofday={lineup.timeofday} />)}
+    </main>
+    <h1 class="plakat">2023 LINEUP PLAKAT</h1>
+    <img class="plakatbillede" src="kuneplakat.png" alt="plakatbillede" />
     <Foooter />
   </body>
 </html>
+
+<style>
+  main {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+</style>
