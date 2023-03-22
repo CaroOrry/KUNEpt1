@@ -6,7 +6,7 @@ console.log(image, date, day, timeofday);
 <article class="lineupcard">
   <img src={image} alt="" />
 
-  <div>
+  <div class="text">
     <h2>July</h2>
     <div class="grid">
       <p class="date">{date}</p>
@@ -61,16 +61,21 @@ console.log(image, date, day, timeofday);
 
   .date {
     font-weight: 600;
-    font-size: 40px;
-    margin-top: 15px;
+    font-size: 35px;
+    margin-top: 5px;
   }
 
   h2 {
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .day {
-    margin-top: 20px;
+    margin-top: 8px;
+    margin-left: 5px;
+  }
+
+  .text {
+    margin-top: 120px;
     margin-left: 10px;
   }
 </style>
