@@ -24,10 +24,12 @@ p {
 
 .colon1 {
   margin: 100px;
+  margin-inline: 15rem;
 }
 
 .colon2 {
   margin: 100px;
+  margin-inline: 15rem;
 }
 
 .overskrift {

@@ -46,7 +46,6 @@ img {
   margin-inline: 50px;
   background-color: white;
   margin-right: 100px;
-  margin-right: 100px;
 }
 
 .overskriftform {
@@ -110,14 +109,18 @@ input[type="submit"]:hover {
 
 .atekst {
   margin-block: 100px;
-  margin-inline: 100px;
+  margin-inline: 300px;
   background-color: white;
   line-height: 25px;
   font-family: "montserrat";
 }
 
+.afsnit2 {
+  margin-top: 2rem;
+}
+
 .knap {
   margin: auto;
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 80px;
 }
