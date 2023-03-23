@@ -1,0 +1,28 @@
+---
+import Button from "../components/Button.astro";
+import Foooter from "../components/Foooter.astro";
+import Header from "../components/Header.astro";
+import Buttonlineup from "../components/Buttonlineup.astro";
+import CountDown from "../components/CountDown.astro";
+import LineupCard from "../components/LineupCard.astro";
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="public/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <link rel="stylesheet" href="src/styles/components.css" />
+    <title>Components</title>
+  </head>
+  <body>
+    <Header />
+    <img class="baggrundsbillede3" src="/prov.png" alt="comp" />
+    <h1 class="titel1">Vores components</h1>
+    <div class="knap1"><Button /></div>
+    <div class="knap2"><Buttonlineup /></div>
+    <div class="countdown"><CountDown /></div>
+    <Foooter />
+  </body>
+</html>
